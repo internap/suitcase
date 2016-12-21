@@ -18,17 +18,21 @@
     </nav>
     <section class="sc-content">
         <% subSnippets = yield.match(/\{\{[^\{]+/g) %>
-        <% for (var subSnippetIndex in subSnippets) { %>
-            <%
-                subSnippet = subSnippets[subSnippetIndex];
-                code = subSnippet.replace(/\{\{.+\}\}/, '').trim();
-                title = subSnippet.match(/\{\{(.+)\}\}/)[1].trim();
-            %>
-
-            <h2><%- title %></h2>
-            <%- code %>
-            <pre><code class="html"><%= code %></code></pre>
-            <hr>
+        <% if (subSnippets) { %>
+            <% for (var subSnippetIndex in subSnippets) { %>
+                <%
+                    subSnippet = subSnippets[subSnippetIndex];
+                    code = subSnippet.replace(/\{\{.+\}\}/, '').trim();
+                    title = subSnippet.match(/\{\{(.+)\}\}/)[1].trim();
+                %>
+                <h2><%- title %></h2>
+                <%- code %>
+                <pre><code class="html"><%= code %></code></pre>
+                <hr>
+            <% } %>
+        <% } else { %>
+            <%- yield %>
+            <pre><code class="html"><%= yield %></code></pre>
         <% } %>
     </section>
 </body>
