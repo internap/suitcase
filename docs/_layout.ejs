@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="/docs.css">
-    <link rel="stylesheet" href="/suitcase.css">
+    <% baseUrl = environment === 'development' ? '' : '/suitcase' %>
+    <link rel="stylesheet" href="<%- baseUrl %>/docs.css">
+    <link rel="stylesheet" href="<%- baseUrl %>/suitcase.css">
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>

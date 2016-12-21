@@ -36,5 +36,5 @@ gulp.task('scss:min', function () {
 
 gulp.task('docs:deploy', function() {
     return gulp.src('./dist/docs/**/*')
-        .pipe(ghPages());
+        .pipe(ghpages());
 });

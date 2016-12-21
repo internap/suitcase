@@ -1,4 +1,6 @@
 <ul>
+    <% baseUrl = environment === 'development' ? '' : '/suitcase' %>
+
     <% for (var sectionIndex in public.snippets._data["sections"]) { %>
         <% section = public.snippets._data["sections"][sectionIndex] %>
         <li>
@@ -7,7 +9,7 @@
                 <% for (var snippetIndex in public.snippets[section]._contents) { %>
                     <% snippet = public.snippets[section]._contents[snippetIndex].replace('.html', '') %>
                     <li>
-                        <a href="/snippets/<%= section %>/<%= snippet %>"><%= snippet %></a>
+                        <a href="<%- baseUrl %>/snippets/<%= section %>/<%= snippet %>"><%= snippet %></a>
                     </li>
                 <% } %>
             </ul>
