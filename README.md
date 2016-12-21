@@ -1,0 +1,52 @@
+# Suitcase
+
+## To do:
+- Most snippets are from Bootstrap 3, they need to be reviewed. The ones that needs to be reviewed are the one that are not cut in sections with `{{ titles }}`. 
+- Flavors support (possibility to override the main `_variables.scss` with custom variables in order to generate multiple stylesheets for multiple brands.)
+- Support JavaScript plugins, like Bootstrap's modals, tooltip, popover, etc.
+
+## Getting started
+
+The compiled CSS is versionned, so if you just need to use it _as is_ you can simply include it.
+
+In order to use the project's commands and workflow, install the dependencies :
+
+`yarn install` or `npm install`
+ 
+ **Note**: Yarn is recommended since it will use the `yarn.lock` file that will ensure you to fetch the _good_
+ versions of the dependencies.
+
+## Usefull commands
+
+`npm run compile`
+
+Compiles the CSS and generate the documentation's static website. Results can be found in the `/dist` folder.
+
+`npm run docs-server`
+
+Compiles the CSS and start a web server that displays the documentation.
+You can edit the files within the `/docs` folder and refresh the page to see your changes, no need to redo
+the command every time.
+
+`npm run scss-dev`
+
+Compiles the CSS and start a watcher that listen for changes within the `/scss` folder in order to automatically
+recompiles the CSS everytime a `.scss` file is modified.
+
+`npm run docs-deploy`
+
+Run the previous `npm run compile` in order to compiles everything and push the generated docs to GitHub Pages.
+
+## Development workflow
+
+Simply execute `npm run docs-server` and `npm run scss-dev` in two differents consoles. By doing that, you will be able
+to work with the docs and the styles and see your changes live from the docs site. Once you're done, you can update 
+your documentation with `npm run docs-deploy`.
+
+## Project structure
+
+For each components, you will have to provides the HTML markup and the SCSS styling.
+- HTML : `docs/snippets/{category}/{component}.ejs`
+- SCSS : `scss/{category}/_{component}.scss`
+
+> In your HTML snippet (`.ejs` file), you can separate your content in subsections with subtitles like `{{ Hello world }}`
