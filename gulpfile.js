@@ -15,23 +15,23 @@ gulp.task('scss:watch', ['scss'], function() {
 });
 
 gulp.task('scss', ['scss:min'], function () {
-    return gulp.src('./scss/suitcase.scss')
+    return gulp.src('./scss/flavors/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(autoprefixer(autoprefixerConfig))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('./dist'))
+        .pipe(gulp.dest('./dist/css'))
         .pipe(gulp.dest('./docs'));
 });
 
 gulp.task('scss:min', function () {
-    return gulp.src('./scss/suitcase.scss')
+    return gulp.src('./scss/flavors/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(autoprefixer(autoprefixerConfig))
         .pipe(sourcemaps.write())
-        .pipe(rename('suitcase.min.css'))
-        .pipe(gulp.dest('./dist'));
+        .pipe(rename(function(path) { path.extname = '.min.css' }))
+        .pipe(gulp.dest('./dist/css'));
 });
 
 gulp.task('docs:deploy', function() {

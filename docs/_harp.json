@@ -1,0 +1,15 @@
+{
+  "globals": {
+    "flavors": {
+      "default": "inap",
+      "list": [
+        "inap",
+        "iweb"
+      ]
+    },
+    "sections": [
+      "bootstrap",
+      "plugins"
+    ]
+  }
+}

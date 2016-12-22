@@ -1,0 +1,12 @@
+$brand-primary:             #F47A1F;
+$brand-success:             #3D9E47;
+$brand-info:                #8AB8CB;
+$brand-warning:             #FAB013;
+$brand-danger:              #C2492D;
+$brand-inverse:             #1A2732;
+
+$btn-secondary-color:       #fff;
+$btn-secondary-bg:          $brand-inverse;
+$btn-secondary-border:      $btn-secondary-bg;
+
+@import "../suitcase";

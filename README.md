@@ -1,8 +1,7 @@
 # Suitcase
 
 ## To do:
-- Most snippets are from Bootstrap 3, they need to be reviewed. The ones that needs to be reviewed are the one that are not cut in sections with `{{ titles }}`. 
-- Flavors support (possibility to override the main `_variables.scss` with custom variables in order to generate multiple stylesheets for multiple brands.)
+- Most snippets are from Bootstrap 3, they need to be reviewed. The ones that needs to be reviewed are the one that are not cut in sections with `{{ titles }}`.
 - Support JavaScript plugins, like Bootstrap's modals, tooltip, popover, etc.
 
 ## Getting started
@@ -50,3 +49,10 @@ For each components, you will have to provides the HTML markup and the SCSS styl
 - SCSS : `scss/{category}/_{component}.scss`
 
 > In your HTML snippet (`.ejs` file), you can separate your content in subsections with subtitles like `{{ Hello world }}`
+
+## To add a flavor
+
+- Create a new `.scss` file under the `scss/flavors` folder where you will declare your custom variables.
+- Show it into your docs by declaring it into the `docs/_harp.json` config file.
+
+> In your new SCSS flavor file, don't forget to put `@import "../suitcase";` at the end in order to include the framework.

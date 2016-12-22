@@ -3,11 +3,12 @@
 <head>
     <% baseUrl = environment === 'development' ? '' : '/suitcase' %>
     <link rel="stylesheet" href="<%- baseUrl %>/docs.css">
-    <link rel="stylesheet" href="<%- baseUrl %>/suitcase.css">
+    <link id="main" rel="stylesheet" href="<%- baseUrl %>/<%- flavors.default %>.css">
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="<%- baseUrl %>/docs.js"></script>
 
     <title>INAP's styleguide - suitcase</title>
 </head>
