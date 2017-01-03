@@ -9,6 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
     <script src="<%- baseUrl %>/docs.js"></script>
+    <script src="<%- baseUrl %>/suitcase.js"></script>
 
     <title>INAP's styleguide - suitcase</title>
 </head>
@@ -18,7 +19,7 @@
         <%- partial("_nav") %>
     </nav>
     <section class="sc-content">
-        <% subSnippets = yield.match(/\{\{[^\{]+/g) %>
+        <% subSnippets = yield.match(/\{\{(.|\n)+?((?=\{\{)|$)/g) %>
         <% if (subSnippets) { %>
             <% for (var subSnippetIndex in subSnippets) { %>
                 <%

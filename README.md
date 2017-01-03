@@ -2,7 +2,6 @@
 
 ## To do:
 - Most snippets are from Bootstrap 3, they need to be reviewed. The ones that needs to be reviewed are the one that are not cut in sections with `{{ titles }}`.
-- Support JavaScript plugins, like Bootstrap's modals, tooltip, popover, etc.
 
 ## Getting started
 

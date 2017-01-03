@@ -1,0 +1,84 @@
+{{ Static example }}
+
+<div class="modal" style="position: relative; display: block;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <p>One fine body&hellip;</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary">Close</button>
+                <button class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ Small modal }}
+
+<div class="modal" style="position: relative; display: block;">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary">Close</button>
+                <button class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ Large modal }}
+
+<div class="modal" style="position: relative; display: block;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary">Close</button>
+                <button class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ JavaScript usage }}
+
+<script type="text/javascript">
+    $(function() {
+        $('#js-modal-trigger').click(function() {
+            $('#js-modal').modal({
+                backdrop: true, // (true|false|'static') Includes a modal-backdrop element.
+                                // Alternatively, specify 'static' for a backdrop which
+                                // doesn't close the modal on click.
+                keyboard: true, // (true|false) Closes the modal when escape key is pressed.
+                focus: true,    // (true|false) Puts the focus on the modal when initialized.
+                show: true      // (true|false) Shows the modal when initialized.
+            });
+        });
+
+        $('#js-modal-close').click(function() {
+            $('#js-modal').modal('hide');
+        });
+    });
+</script>
+
+<button id="js-modal-trigger" class="btn btn-primary">Open modal</button>
+
+<div id="js-modal" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-body">Hello there !</div>
+            <div class="modal-footer">
+                <button id="js-modal-close" class="btn btn-secondary">Close</button>
+                <button class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
