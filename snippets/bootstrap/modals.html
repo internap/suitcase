@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="/suitcase/docs.css">
+    <link id="main" rel="stylesheet" href="/suitcase/inap.css">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+    <script src="/suitcase/docs.js"></script>
+    <script src="/suitcase/suitcase.js"></script>
+
+    <title>INAP's styleguide - suitcase</title>
+</head>
+<body>
+    <a href="https://github.com/internap/suitcase"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+    <nav class="sc-nav">
+        
+<ul>
+    <li><strong>Flavors</strong></li>
+    <li>
+        
+            
+            <button data-flavor="inap" class="btn btn-primary btn-block btn-sm active">
+                inap
+            </button>
+        
+            
+            <button data-flavor="iweb" class="btn btn-primary btn-block btn-sm ">
+                iweb
+            </button>
+        
+    </li>
+    
+    
+    <li>
+        <ul>
+            <li><strong>bootstrap</strong></li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/address">address</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/alerts">alerts</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/badges">badges</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/blockquote">blockquote</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/breadcrumbs">breadcrumbs</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/button-groups">button-groups</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/buttons">buttons</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/code">code</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/definition-lists">definition-lists</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/dropdowns">dropdowns</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/forms">forms</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/headings">headings</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/hero">hero</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/images">images</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/labels">labels</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/list-groups">list-groups</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/lists">lists</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/media-object">media-object</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/modals">modals</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/navbar">navbar</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/navs">navs</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/pagination">pagination</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/panels">panels</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/progress-bars">progress-bars</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/tables">tables</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/text-elements">text-elements</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/thumbnails">thumbnails</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/well">well</a>
+            </li>
+            
+        </ul>
+    </li>
+    
+    
+    <li>
+        <ul>
+            <li><strong>plugins</strong></li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/plugins/fontawesome">fontawesome</a>
+            </li>
+            
+        </ul>
+    </li>
+    
+</ul>
+    </nav>
+    <section class="sc-content">
+        
+        
+            
+                
+                <h2>Static example</h2>
+                <div class="modal" style="position: relative; display: block">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <p>One fine body&hellip;</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary">Close</button>
+                <button class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+                <pre><code class="html">&lt;div class=&#34;modal&#34; style=&#34;position: relative; display: block&#34;&gt;
+    &lt;div class=&#34;modal-dialog&#34; role=&#34;document&#34;&gt;
+        &lt;div class=&#34;modal-content&#34;&gt;
+            &lt;div class=&#34;modal-header&#34;&gt;
+                &lt;button class=&#34;close&#34;&gt;
+                    &lt;span aria-hidden=&#34;true&#34;&gt;&amp;times;&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;h4 class=&#34;modal-title&#34;&gt;Modal title&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;modal-body&#34;&gt;
+                &lt;p&gt;One fine body&amp;hellip;&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;modal-footer&#34;&gt;
+                &lt;button class=&#34;btn btn-secondary&#34;&gt;Close&lt;/button&gt;
+                &lt;button class=&#34;btn btn-primary&#34;&gt;Save changes&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <hr>
+            
+                
+                <h2>Small modal</h2>
+                <div class="modal" style="position: relative; display: block">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary">Close</button>
+                <button class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+                <pre><code class="html">&lt;div class=&#34;modal&#34; style=&#34;position: relative; display: block&#34;&gt;
+    &lt;div class=&#34;modal-dialog modal-sm&#34;&gt;
+        &lt;div class=&#34;modal-content&#34;&gt;
+            &lt;div class=&#34;modal-body&#34;&gt;...&lt;/div&gt;
+            &lt;div class=&#34;modal-footer&#34;&gt;
+                &lt;button class=&#34;btn btn-secondary&#34;&gt;Close&lt;/button&gt;
+                &lt;button class=&#34;btn btn-primary&#34;&gt;Save changes&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <hr>
+            
+                
+                <h2>Large modal</h2>
+                <div class="modal" style="position: relative; display: block">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary">Close</button>
+                <button class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+                <pre><code class="html">&lt;div class=&#34;modal&#34; style=&#34;position: relative; display: block&#34;&gt;
+    &lt;div class=&#34;modal-dialog modal-lg&#34;&gt;
+        &lt;div class=&#34;modal-content&#34;&gt;
+            &lt;div class=&#34;modal-body&#34;&gt;...&lt;/div&gt;
+            &lt;div class=&#34;modal-footer&#34;&gt;
+                &lt;button class=&#34;btn btn-secondary&#34;&gt;Close&lt;/button&gt;
+                &lt;button class=&#34;btn btn-primary&#34;&gt;Save changes&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <hr>
+            
+                
+                <h2>JavaScript usage</h2>
+                <script type="text/javascript">
+    $(function() {
+        $('#js-modal-trigger').click(function() {
+            $('#js-modal').modal({
+                backdrop: true, // (true|false|'static') Includes a modal-backdrop element.
+                                // Alternatively, specify 'static' for a backdrop which
+                                // doesn't close the modal on click.
+                keyboard: true, // (true|false) Closes the modal when escape key is pressed.
+                focus: true,    // (true|false) Puts the focus on the modal when initialized.
+                show: true      // (true|false) Shows the modal when initialized.
+            });
+        });
+
+        $('#js-modal-close').click(function() {
+            $('#js-modal').modal('hide');
+        });
+    });
+</script>
+
+<button id="js-modal-trigger" class="btn btn-primary">Open modal</button>
+
+<div id="js-modal" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-body">Hello there !</div>
+            <div class="modal-footer">
+                <button id="js-modal-close" class="btn btn-secondary">Close</button>
+                <button class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+                <pre><code class="html">&lt;script type=&#34;text/javascript&#34;&gt;
+    $(function() {
+        $(&#39;#js-modal-trigger&#39;).click(function() {
+            $(&#39;#js-modal&#39;).modal({
+                backdrop: true, // (true|false|&#39;static&#39;) Includes a modal-backdrop element.
+                                // Alternatively, specify &#39;static&#39; for a backdrop which
+                                // doesn&#39;t close the modal on click.
+                keyboard: true, // (true|false) Closes the modal when escape key is pressed.
+                focus: true,    // (true|false) Puts the focus on the modal when initialized.
+                show: true      // (true|false) Shows the modal when initialized.
+            });
+        });
+
+        $(&#39;#js-modal-close&#39;).click(function() {
+            $(&#39;#js-modal&#39;).modal(&#39;hide&#39;);
+        });
+    });
+&lt;/script&gt;
+
+&lt;button id=&#34;js-modal-trigger&#34; class=&#34;btn btn-primary&#34;&gt;Open modal&lt;/button&gt;
+
+&lt;div id=&#34;js-modal&#34; class=&#34;modal fade&#34;&gt;
+    &lt;div class=&#34;modal-dialog modal-sm&#34;&gt;
+        &lt;div class=&#34;modal-content&#34;&gt;
+            &lt;div class=&#34;modal-body&#34;&gt;Hello there !&lt;/div&gt;
+            &lt;div class=&#34;modal-footer&#34;&gt;
+                &lt;button id=&#34;js-modal-close&#34; class=&#34;btn btn-secondary&#34;&gt;Close&lt;/button&gt;
+                &lt;button class=&#34;btn btn-primary&#34;&gt;Save changes&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <hr>
+            
+        
+    </section>
+    <footer class="sc-footer">
+        <ul>
+    <li><strong>Additional documentation</strong></li>
+    
+        
+        <li>
+            <strong>Bootstrap</strong> : <a href="http://v4-alpha.getbootstrap.com/getting-started/introduction/" target="_blank">http://v4-alpha.getbootstrap.com/getting-started/introduction/</a>
+        </li>
+    
+        
+        <li>
+            <strong>Font Awesome</strong> : <a href="http://fontawesome.io/icons/" target="_blank">http://fontawesome.io/icons/</a>
+        </li>
+    
+        
+        <li>
+            <strong>Tether.io</strong> : <a href="http://tether.io/" target="_blank">http://tether.io/</a>
+        </li>
+    
+</ul>
+    </footer>
+</body>
+</html>
