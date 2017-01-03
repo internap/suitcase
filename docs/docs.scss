@@ -1,6 +1,7 @@
 body {
     display: flex;
     flex-flow: row;
+    flex-wrap: wrap;
     padding: 10px;
 }
 
@@ -19,5 +20,14 @@ body {
 
     > pre {
         margin-top: 10px;
+    }
+}
+
+.sc-footer {
+    width: 100vw;
+
+    ul {
+        list-style: none;
+        padding-left: 0;
     }
 }

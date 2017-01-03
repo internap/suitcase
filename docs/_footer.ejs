@@ -1,0 +1,9 @@
+<ul>
+    <li><strong>Additional documentation</strong></li>
+    <% for (var docIndex in docs) { %>
+        <% doc =  docs[docIndex] %>
+        <li>
+            <strong><%= doc[0] %></strong> : <a href="<%= doc[1] %>" target="_blank"><%= doc[1] %></a>
+        </li>
+    <% } %>
+</ul>

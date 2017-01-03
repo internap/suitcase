@@ -10,6 +10,11 @@
     "sections": [
       "bootstrap",
       "plugins"
+    ],
+    "docs": [
+      ["Bootstrap", "http://v4-alpha.getbootstrap.com/getting-started/introduction/"],
+      ["Font Awesome", "http://fontawesome.io/icons/"],
+      ["Tether.io", "http://tether.io/"]
     ]
   }
 }
