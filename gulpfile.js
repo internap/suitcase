@@ -12,6 +12,8 @@ var autoprefixerConfig = {
     cascade: false
 };
 
+var sassIncludePaths = ['./nodes_modules'];
+
 var jsVendors = [
     './node_modules/tether/dist/js/tether.js',
     './node_modules/bootstrap/dist/js/bootstrap.js'
@@ -24,7 +26,9 @@ gulp.task('scss:watch', ['scss'], function() {
 gulp.task('scss', ['scss:min'], function () {
     return gulp.src('./scss/flavors/*.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass())
+        .pipe(sass({
+            includePaths: sassIncludePaths
+        }))
         .pipe(autoprefixer(autoprefixerConfig))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('./dist/css'))
@@ -34,7 +38,11 @@ gulp.task('scss', ['scss:min'], function () {
 gulp.task('scss:min', function () {
     return gulp.src('./scss/flavors/*.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass({ outputStyle: 'compressed' }))
+        .pipe(sass({
+            outputStyle: 'compressed',
+            includePaths: sassIncludePaths,
+            onlyIncluded: false
+        }))
         .pipe(autoprefixer(autoprefixerConfig))
         .pipe(sourcemaps.write())
         .pipe(rename(function(path) { path.extname = '.min.css' }))
