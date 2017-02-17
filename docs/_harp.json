@@ -9,7 +9,8 @@
     },
     "sections": [
       "bootstrap",
-      "plugins"
+      "plugins",
+      "utils"
     ],
     "docs": [
       ["Bootstrap", "http://v4-alpha.getbootstrap.com/getting-started/introduction/"],

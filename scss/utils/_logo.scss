@@ -1,0 +1,24 @@
+.logo {
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: $logo-width;
+    height: $logo-height;
+
+    &.logo-dark {
+        background-image: $logo-dark;
+    }
+
+    &.logo-white {
+        background-image: $logo-white;
+    }
+
+    &.logo-sm {
+        width: $logo-width * 0.75;
+        height: $logo-height * 0.75;
+    }
+
+    &.logo-lg {
+        width: $logo-width * 1.25;
+        height: $logo-height * 1.25;
+    }
+}
