@@ -1,0 +1,21 @@
+.digit-circle {
+    $digit-circle-sizing: 1.3em;
+
+    display: inline-block;
+    background: $body-color;
+    color: #fff;
+    height: $digit-circle-sizing;
+    width: $digit-circle-sizing;
+    border-radius: 50%;
+    line-height: $digit-circle-sizing;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: $digit-circle-sizing / 6;
+
+    &.digit-circle-primary { background: $brand-primary; }
+    &.digit-circle-secondary { background: $brand-inverse; }
+    &.digit-circle-success { background: $brand-success; }
+    &.digit-circle-info { background: $brand-info; }
+    &.digit-circle-warning { background: $brand-warning; }
+    &.digit-circle-danger { background: $brand-danger; }
+}
