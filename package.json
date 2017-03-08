@@ -5,6 +5,9 @@
   "author": "Pascal Boutin <pboutin@internap.com>",
   "license": "MIT",
   "scripts": {
+    "publish-patch": "node_modules/npm-publish-release/bin/npr.js patch",
+    "publish-minor": "node_modules/npm-publish-release/bin/npr.js minor",
+    "publish-major": "node_modules/npm-publish-release/bin/npr.js major",
     "compile": "gulp js && gulp scss && node_modules/harp/bin/harp compile docs --output ../dist/docs",
     "scss-dev": "gulp scss:watch",
     "docs-server": "gulp scss && node_modules/harp/bin/harp server docs",
