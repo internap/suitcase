@@ -1,16 +1,16 @@
 .digit-circle {
-    $digit-circle-sizing: 1.3em;
+    $digit-circle-sizing: 1.1em;
 
     display: inline-block;
     background: $body-color;
     color: #fff;
+    font-size: $digit-circle-sizing * 0.7;
     height: $digit-circle-sizing;
     width: $digit-circle-sizing;
     border-radius: 50%;
     line-height: $digit-circle-sizing;
-    vertical-align: middle;
+    vertical-align: 7%;
     text-align: center;
-    margin-right: $digit-circle-sizing / 6;
 
     &.digit-circle-primary { background: $brand-primary; }
     &.digit-circle-secondary { background: $brand-inverse; }
