@@ -6,18 +6,24 @@ var autoprefixer = require('gulp-autoprefixer');
 var ghpages = require('gulp-gh-pages');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+var plumber = require('gulp-plumber');
 
 var autoprefixerConfig = {
     browsers: ['last 2 versions'],
     cascade: false
 };
 
-var sassIncludePaths = ['./nodes_modules'];
+const sassIncludePaths = ['./nodes_modules'];
 
-var jsVendors = [
+const jsVendors = [
     './node_modules/tether/dist/js/tether.js',
     './node_modules/bootstrap/dist/js/bootstrap.js'
 ];
+
+const errorHandler = function(error) {
+    console.error(error);
+    this.emit('end');
+};
 
 gulp.task('scss:watch', ['scss'], function() {
     gulp.watch('./scss/**/*.scss', ['scss']);
@@ -25,6 +31,7 @@ gulp.task('scss:watch', ['scss'], function() {
 
 gulp.task('scss', ['scss:min'], function () {
     return gulp.src('./scss/flavors/*.scss')
+        .pipe(plumber({ errorHandler: errorHandler }))
         .pipe(sourcemaps.init())
         .pipe(sass({
             includePaths: sassIncludePaths
@@ -37,6 +44,7 @@ gulp.task('scss', ['scss:min'], function () {
 
 gulp.task('scss:min', function () {
     return gulp.src('./scss/flavors/*.scss')
+        .pipe(plumber({ errorHandler: errorHandler }))
         .pipe(sourcemaps.init())
         .pipe(sass({
             outputStyle: 'compressed',

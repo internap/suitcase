@@ -5,4 +5,4 @@ dist/docs/
 docs/*.css
 docs/suitcase.js
 *.iml
-
+npm-debug.log
