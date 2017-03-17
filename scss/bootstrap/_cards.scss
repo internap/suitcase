@@ -2,5 +2,9 @@
     &.card-well {
         background-color: $gray-lighter;
         border: none;
+
+        .digit-circle {
+            color: $gray-lighter;
+        }
     }
 }
