@@ -40,32 +40,7 @@
             
             
             <li>
-                <a href="/suitcase/snippets/bootstrap/address">address</a>
-            </li>
-            
-            
-            <li>
                 <a href="/suitcase/snippets/bootstrap/alerts">alerts</a>
-            </li>
-            
-            
-            <li>
-                <a href="/suitcase/snippets/bootstrap/badges">badges</a>
-            </li>
-            
-            
-            <li>
-                <a href="/suitcase/snippets/bootstrap/blockquote">blockquote</a>
-            </li>
-            
-            
-            <li>
-                <a href="/suitcase/snippets/bootstrap/breadcrumbs">breadcrumbs</a>
-            </li>
-            
-            
-            <li>
-                <a href="/suitcase/snippets/bootstrap/button-groups">button-groups</a>
             </li>
             
             
@@ -80,22 +55,7 @@
             
             
             <li>
-                <a href="/suitcase/snippets/bootstrap/code">code</a>
-            </li>
-            
-            
-            <li>
-                <a href="/suitcase/snippets/bootstrap/definition-lists">definition-lists</a>
-            </li>
-            
-            
-            <li>
-                <a href="/suitcase/snippets/bootstrap/dropdowns">dropdowns</a>
-            </li>
-            
-            
-            <li>
-                <a href="/suitcase/snippets/bootstrap/forms">forms</a>
+                <a href="/suitcase/snippets/bootstrap/grid">grid</a>
             </li>
             
             
@@ -105,82 +65,12 @@
             
             
             <li>
-                <a href="/suitcase/snippets/bootstrap/hero">hero</a>
-            </li>
-            
-            
-            <li>
-                <a href="/suitcase/snippets/bootstrap/images">images</a>
-            </li>
-            
-            
-            <li>
-                <a href="/suitcase/snippets/bootstrap/labels">labels</a>
-            </li>
-            
-            
-            <li>
-                <a href="/suitcase/snippets/bootstrap/list-groups">list-groups</a>
-            </li>
-            
-            
-            <li>
-                <a href="/suitcase/snippets/bootstrap/lists">lists</a>
-            </li>
-            
-            
-            <li>
-                <a href="/suitcase/snippets/bootstrap/media-object">media-object</a>
-            </li>
-            
-            
-            <li>
                 <a href="/suitcase/snippets/bootstrap/modals">modals</a>
             </li>
             
             
             <li>
-                <a href="/suitcase/snippets/bootstrap/navbar">navbar</a>
-            </li>
-            
-            
-            <li>
-                <a href="/suitcase/snippets/bootstrap/navs">navs</a>
-            </li>
-            
-            
-            <li>
-                <a href="/suitcase/snippets/bootstrap/pagination">pagination</a>
-            </li>
-            
-            
-            <li>
-                <a href="/suitcase/snippets/bootstrap/panels">panels</a>
-            </li>
-            
-            
-            <li>
-                <a href="/suitcase/snippets/bootstrap/progress-bars">progress-bars</a>
-            </li>
-            
-            
-            <li>
-                <a href="/suitcase/snippets/bootstrap/tables">tables</a>
-            </li>
-            
-            
-            <li>
-                <a href="/suitcase/snippets/bootstrap/text-elements">text-elements</a>
-            </li>
-            
-            
-            <li>
-                <a href="/suitcase/snippets/bootstrap/thumbnails">thumbnails</a>
-            </li>
-            
-            
-            <li>
-                <a href="/suitcase/snippets/bootstrap/well">well</a>
+                <a href="/suitcase/snippets/bootstrap/tooltips">tooltips</a>
             </li>
             
         </ul>
@@ -235,12 +125,31 @@
     <section class="sc-content">
         
         
-            <div class="well">Look, I'm in a well!</div>
-<div class="well well-small">Small Well</div>
-<div class="well well-large">Large Padding Well</div>
-            <pre><code class="html">&lt;div class=&#34;well&#34;&gt;Look, I&#39;m in a well!&lt;/div&gt;
-&lt;div class=&#34;well well-small&#34;&gt;Small Well&lt;/div&gt;
-&lt;div class=&#34;well well-large&#34;&gt;Large Padding Well&lt;/div&gt;</code></pre>
+            
+                
+                <h2>Basic example</h2>
+                <button class="js-tooltips btn btn-primary" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+<button class="js-tooltips btn btn-primary" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+<button class="js-tooltips btn btn-primary" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+<button class="js-tooltips btn btn-primary" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+
+<script type="text/javascript">
+    $(function() {
+        $('.js-tooltips').tooltip();
+    });
+</script>
+                <pre class="sc-code"><code class="html">&lt;button class=&#34;js-tooltips btn btn-primary&#34; data-placement=&#34;left&#34; title=&#34;Tooltip on left&#34;&gt;Tooltip on left&lt;/button&gt;
+&lt;button class=&#34;js-tooltips btn btn-primary&#34; data-placement=&#34;top&#34; title=&#34;Tooltip on top&#34;&gt;Tooltip on top&lt;/button&gt;
+&lt;button class=&#34;js-tooltips btn btn-primary&#34; data-placement=&#34;bottom&#34; title=&#34;Tooltip on bottom&#34;&gt;Tooltip on bottom&lt;/button&gt;
+&lt;button class=&#34;js-tooltips btn btn-primary&#34; data-placement=&#34;right&#34; title=&#34;Tooltip on right&#34;&gt;Tooltip on right&lt;/button&gt;
+
+&lt;script type=&#34;text/javascript&#34;&gt;
+    $(function() {
+        $(&#39;.js-tooltips&#39;).tooltip();
+    });
+&lt;/script&gt;</code></pre>
+                <hr>
+            
         
     </section>
     <footer class="sc-footer">
