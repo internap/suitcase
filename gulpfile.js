@@ -17,7 +17,9 @@ const sassIncludePaths = ['./nodes_modules'];
 
 const jsVendors = [
     './node_modules/tether/dist/js/tether.js',
-    './node_modules/bootstrap/dist/js/bootstrap.js'
+    './node_modules/bootstrap/js/src/util.js',
+    './node_modules/bootstrap/js/src/modal.js',
+    './node_modules/bootstrap/js/src/tooltip.js'
 ];
 
 const errorHandler = function(error) {

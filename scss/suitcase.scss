@@ -1,7 +1,7 @@
 /*
  * Bootstrap
  *******************************************************/
-@import "node_modules/bootstrap/scss/bootstrap";
+@import "core-bootstrap";
 
 /*
  * Plugins
@@ -22,6 +22,7 @@
  * Bootstrap addons
  *******************************************************/
 @import "bootstrap/cards";
+@import "bootstrap/modals";
 
 /*
  * Components
