@@ -17,9 +17,9 @@ const sassIncludePaths = ['./nodes_modules'];
 
 const jsVendors = [
     './node_modules/tether/dist/js/tether.js',
-    './node_modules/bootstrap/js/src/util.js',
-    './node_modules/bootstrap/js/src/modal.js',
-    './node_modules/bootstrap/js/src/tooltip.js'
+    './node_modules/bootstrap/js/dist/util.js',
+    './node_modules/bootstrap/js/dist/modal.js',
+    './node_modules/bootstrap/js/dist/tooltip.js'
 ];
 
 const errorHandler = function(error) {
@@ -61,6 +61,7 @@ gulp.task('scss:min', function () {
 
 gulp.task('js', ['js:min'], function() {
     return gulp.src(jsVendors)
+        .pipe(plumber({ errorHandler: errorHandler }))
         .pipe(sourcemaps.init())
         .pipe(concat('suitcase.js'))
         .pipe(sourcemaps.write())
@@ -70,6 +71,7 @@ gulp.task('js', ['js:min'], function() {
 
 gulp.task('js:min', function() {
     return gulp.src(jsVendors)
+        .pipe(plumber({ errorHandler: errorHandler }))
         .pipe(sourcemaps.init())
         .pipe(concat('suitcase.min.js'))
         .pipe(uglify())
@@ -79,5 +81,6 @@ gulp.task('js:min', function() {
 
 gulp.task('docs:deploy', function() {
     return gulp.src('./dist/docs/**/*')
+        .pipe(plumber({ errorHandler: errorHandler }))
         .pipe(ghpages());
 });
