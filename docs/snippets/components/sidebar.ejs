@@ -1,0 +1,46 @@
+{{ Main sidebar }}
+
+<div style="padding: 10px; height: 400px; border: 1px solid black;">
+    <nav id="level-1" class="sidebar">
+        <ul class="sidebar-group-primary">
+            <li>
+                <a href="#first-level-2" data-toggle="collapse" data-parent="#level-1">Level one menu item</a>
+                <ul id="first-level-2" class="sidebar-group-secondary collapse show">
+                    <li>
+                        <a class="collapsed" href="#first-level-3" data-toggle="collapse" data-parent="#first-level-2">Level two menu item</a>
+                        <ul id="first-level-3" class="sidebar-group-items collapse">
+                            <li>
+                                <a class="active" href="#">Level three menu item</a>
+                            </li>
+                            <li>
+                                <a href="#">Level three menu item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="collapsed" href="#second-level-3" data-toggle="collapse" data-parent="#first-level-2">Level two menu item</a>
+                        <ul id="second-level-3" class="sidebar-group-items collapse">
+                            <li>
+                                <a href="#">Level three menu item</a>
+                            </li>
+                            <li>
+                                <a href="#">Level three menu item</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="collapsed" href="#second-level-2" data-toggle="collapse" data-parent="#level-1">Level one menu item</a>
+                <ul id="second-level-2" class="sidebar-group-items collapse">
+                    <li>
+                        <a href="#">Level two menu item</a>
+                    </li>
+                    <li>
+                        <a href="#">Level two menu item</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>

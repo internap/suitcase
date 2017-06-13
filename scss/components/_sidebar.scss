@@ -1,0 +1,100 @@
+$sidebar-transition-duration: 250ms;
+
+.sidebar {
+    width: 240px;
+    height: 100%;
+    background: $white;
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: $body-color;
+        transition: background $sidebar-transition-duration;
+
+        &.active {
+            color: $brand-primary;
+            font-weight: bold;
+        }
+
+        &:hover {
+            background: darken($global-bg, 5%);
+        }
+    }
+
+    .sidebar-group-primary > li {
+        > a {
+            font-size: 1rem;
+            height: 3rem;
+            line-height: 3rem;
+            padding-left: 1.2rem;
+            position: relative;
+
+            &:after {
+                display: inline-block;
+                font-family: FontAwesome;
+                content: '\f053';
+                transition: transform $sidebar-transition-duration;
+                font-size: 0.6rem;
+                position: absolute;
+                right: 1rem;
+            }
+
+            &:not(.collapsed):after {
+                transform: rotate(-90deg);
+            }
+        }
+
+        .sidebar-group-secondary {
+            border-left: 5px solid $brand-primary;
+
+            > li > a {
+                font-size: 0.9rem;
+                height: 2rem;
+                line-height: 2rem;
+                padding-left: 1.5rem;
+                position: relative;
+
+                &:after {
+                    display: inline-block;
+                    font-family: FontAwesome;
+                    content: '\f053';
+                    transition: transform $sidebar-transition-duration;
+                    font-size: 0.5rem;
+                    position: absolute;
+                    right: 1rem;
+                }
+
+                &:not(.collapsed):after {
+                    transform: rotate(-90deg);
+                }
+            }
+
+            .sidebar-group-items {
+                border-left: none;
+            }
+        }
+
+        .sidebar-group-items {
+            border-left: 5px solid $brand-primary;
+
+            a {
+                text-align: right;
+                padding-right: 1rem;
+                font-size: 0.8rem;
+                height: 2rem;
+                line-height: 2rem;
+                padding-right: 1rem;
+                transition: padding-right $sidebar-transition-duration;
+
+                &:hover {
+                    padding-right: 1.5rem;
+                }
+            }
+        }
+    }
+}

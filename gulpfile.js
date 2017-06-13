@@ -19,7 +19,8 @@ const jsVendors = [
     './node_modules/tether/dist/js/tether.js',
     './node_modules/bootstrap/js/dist/util.js',
     './node_modules/bootstrap/js/dist/modal.js',
-    './node_modules/bootstrap/js/dist/tooltip.js'
+    './node_modules/bootstrap/js/dist/tooltip.js',
+    './node_modules/bootstrap/js/dist/collapse.js'
 ];
 
 const errorHandler = function(error) {
