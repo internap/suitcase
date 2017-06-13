@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="/suitcase/docs.css">
+    <link id="main" rel="stylesheet" href="/suitcase/inap.css">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+    <script src="/suitcase/docs.js"></script>
+    <script src="/suitcase/suitcase.js"></script>
+
+    <title>INAP's styleguide - suitcase</title>
+</head>
+<body>
+    <a href="https://github.com/internap/suitcase"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 10000;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+    <nav class="sc-nav">
+        
+<ul>
+    <li><strong>Flavors</strong></li>
+    <li>
+        
+            
+            <button data-flavor="inap" class="btn btn-primary btn-block btn-sm active">
+                inap
+            </button>
+        
+            
+            <button data-flavor="iweb" class="btn btn-primary btn-block btn-sm ">
+                iweb
+            </button>
+        
+    </li>
+    
+    
+    <li>
+        <ul>
+            <li><strong>bootstrap</strong></li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/alerts">alerts</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/buttons">buttons</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/cards">cards</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/grid">grid</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/headings">headings</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/modals">modals</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/navbars">navbars</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/bootstrap/tooltips">tooltips</a>
+            </li>
+            
+        </ul>
+    </li>
+    
+    
+    <li>
+        <ul>
+            <li><strong>plugins</strong></li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/plugins/fontawesome">fontawesome</a>
+            </li>
+            
+        </ul>
+    </li>
+    
+    
+    <li>
+        <ul>
+            <li><strong>utils</strong></li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/utils/block-center">block-center</a>
+            </li>
+            
+        </ul>
+    </li>
+    
+    
+    <li>
+        <ul>
+            <li><strong>components</strong></li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/components/digit-circle">digit-circle</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/components/logos">logos</a>
+            </li>
+            
+            
+            <li>
+                <a href="/suitcase/snippets/components/sidebar">sidebar</a>
+            </li>
+            
+        </ul>
+    </li>
+    
+</ul>
+    </nav>
+    <section class="sc-content">
+        
+        
+            
+                
+                <h2>Main sidebar</h2>
+                <div style="padding: 10px; height: 400px; border: 1px solid black">
+    <nav id="level-1" class="sidebar">
+        <ul class="sidebar-group-primary">
+            <li>
+                <a href="#first-level-2" data-toggle="collapse" data-parent="#level-1">Level one menu item</a>
+                <ul id="first-level-2" class="sidebar-group-secondary collapse show">
+                    <li>
+                        <a class="collapsed" href="#first-level-3" data-toggle="collapse" data-parent="#first-level-2">Level two menu item</a>
+                        <ul id="first-level-3" class="sidebar-group-items collapse">
+                            <li>
+                                <a class="active" href="#">Level three menu item</a>
+                            </li>
+                            <li>
+                                <a href="#">Level three menu item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="collapsed" href="#second-level-3" data-toggle="collapse" data-parent="#first-level-2">Level two menu item</a>
+                        <ul id="second-level-3" class="sidebar-group-items collapse">
+                            <li>
+                                <a href="#">Level three menu item</a>
+                            </li>
+                            <li>
+                                <a href="#">Level three menu item</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="collapsed" href="#second-level-2" data-toggle="collapse" data-parent="#level-1">Level one menu item</a>
+                <ul id="second-level-2" class="sidebar-group-items collapse">
+                    <li>
+                        <a href="#">Level two menu item</a>
+                    </li>
+                    <li>
+                        <a href="#">Level two menu item</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+                <pre class="sc-code"><code class="html">&lt;div style=&#34;padding: 10px; height: 400px; border: 1px solid black&#34;&gt;
+    &lt;nav id=&#34;level-1&#34; class=&#34;sidebar&#34;&gt;
+        &lt;ul class=&#34;sidebar-group-primary&#34;&gt;
+            &lt;li&gt;
+                &lt;a href=&#34;#first-level-2&#34; data-toggle=&#34;collapse&#34; data-parent=&#34;#level-1&#34;&gt;Level one menu item&lt;/a&gt;
+                &lt;ul id=&#34;first-level-2&#34; class=&#34;sidebar-group-secondary collapse show&#34;&gt;
+                    &lt;li&gt;
+                        &lt;a class=&#34;collapsed&#34; href=&#34;#first-level-3&#34; data-toggle=&#34;collapse&#34; data-parent=&#34;#first-level-2&#34;&gt;Level two menu item&lt;/a&gt;
+                        &lt;ul id=&#34;first-level-3&#34; class=&#34;sidebar-group-items collapse&#34;&gt;
+                            &lt;li&gt;
+                                &lt;a class=&#34;active&#34; href=&#34;#&#34;&gt;Level three menu item&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&#34;#&#34;&gt;Level three menu item&lt;/a&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a class=&#34;collapsed&#34; href=&#34;#second-level-3&#34; data-toggle=&#34;collapse&#34; data-parent=&#34;#first-level-2&#34;&gt;Level two menu item&lt;/a&gt;
+                        &lt;ul id=&#34;second-level-3&#34; class=&#34;sidebar-group-items collapse&#34;&gt;
+                            &lt;li&gt;
+                                &lt;a href=&#34;#&#34;&gt;Level three menu item&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&#34;#&#34;&gt;Level three menu item&lt;/a&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a class=&#34;collapsed&#34; href=&#34;#second-level-2&#34; data-toggle=&#34;collapse&#34; data-parent=&#34;#level-1&#34;&gt;Level one menu item&lt;/a&gt;
+                &lt;ul id=&#34;second-level-2&#34; class=&#34;sidebar-group-items collapse&#34;&gt;
+                    &lt;li&gt;
+                        &lt;a href=&#34;#&#34;&gt;Level two menu item&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href=&#34;#&#34;&gt;Level two menu item&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/div&gt;</code></pre>
+                <hr>
+            
+        
+    </section>
+    <footer class="sc-footer">
+        <ul>
+    <li><strong>Additional documentation</strong></li>
+    
+        
+        <li>
+            <strong>Bootstrap</strong> : <a href="http://v4-alpha.getbootstrap.com/getting-started/introduction/" target="_blank">http://v4-alpha.getbootstrap.com/getting-started/introduction/</a>
+        </li>
+    
+        
+        <li>
+            <strong>Font Awesome</strong> : <a href="http://fontawesome.io/icons/" target="_blank">http://fontawesome.io/icons/</a>
+        </li>
+    
+        
+        <li>
+            <strong>Tether.io</strong> : <a href="http://tether.io/" target="_blank">http://tether.io/</a>
+        </li>
+    
+</ul>
+    </footer>
+</body>
+</html>
