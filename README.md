@@ -16,7 +16,7 @@ In order to use the project's commands and workflow, install the dependencies :
 
 ## Usefull commands
 
-`npm run compile`
+`npm run compile-all`
 
 Compiles the CSS and generate the documentation's static website. Results can be found in the `/dist` folder.
 

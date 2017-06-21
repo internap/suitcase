@@ -36,9 +36,7 @@ gulp.task('scss', ['scss:min'], function () {
     return gulp.src('./scss/flavors/*.scss')
         .pipe(plumber({ errorHandler: errorHandler }))
         .pipe(sourcemaps.init())
-        .pipe(sass({
-            includePaths: sassIncludePaths
-        }))
+        .pipe(sass({ includePaths: sassIncludePaths }))
         .pipe(autoprefixer(autoprefixerConfig))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('./dist/css'))
