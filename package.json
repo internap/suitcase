@@ -1,6 +1,6 @@
 {
   "name": "internap-suitcase",
-  "version": "1.5.3",
+  "version": "1.6.0",
   "description": "INAP's styleguide, based on Twitter Bootstrap.",
   "author": "Pascal Boutin <pboutin@internap.com>",
   "license": "MIT",
