@@ -13,6 +13,20 @@ $btn-secondary-border:      $btn-secondary-bg !default;
 
 $sidebar-width:             240px;
 
+$font-size-html: 14px;
+
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:   1.25rem !default;
+$font-size-sm:   .875rem !default;
+$font-size-xs:   .75rem !default;
+
+$font-size-h1: 2.5rem !default;
+$font-size-h2: 2rem !default;
+$font-size-h3: 1.75rem !default;
+$font-size-h4: 1.5rem !default;
+$font-size-h5: 1.25rem !default;
+$font-size-h6: 1rem !default;
+
 $logo-width: 0 !default;
 $logo-height: 0 !default;
 $logo-dark: none !default;
