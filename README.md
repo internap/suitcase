@@ -1,8 +1,8 @@
 # Suitcase
 
 ## To do:
-- Most snippets are from Bootstrap 3, they need to be reviewed. The ones that needs to be reviewed are the one that are not cut in sections with `{{ titles }}`.
-
+- Actually based on the last alpha of Bootstrap 4. The beta just went out at the moment of writing and the format changed a lot for a lot of the variables. If the styleguide is upgraded to Bootstrap 4 beta, make sure that the variables used by the Horizon theme remains backward compatible.
+ 
 ## Getting started
 
 The compiled CSS is versionned, so if you just need to use it _as is_ you can simply include it.
